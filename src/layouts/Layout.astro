@@ -1,14 +1,30 @@
+---
+import "./src/styles/global.css";
+import '@fontsource/corinthia/700.css';
+
+import BackgroundPage from "@/components/BackgroundPage.astro"
+import HeaderPage from "@/sections/HeaderPage.astro"
+import FooterPage from "@/sections/FooterPage.astro"
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Punto del Sabor | PaulDev</title>
 	</head>
-	<body>
-		<slot />
+	<body class="text-neutral-950 dark:text-neutral-50 transition-colors duration-300 ease-in-out">
+		<BackgroundPage />
+		<div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
+			<HeaderPage />
+			<main>
+				<slot />
+			</main>
+			<FooterPage />
+		</div>
 	</body>
 </html>
 
