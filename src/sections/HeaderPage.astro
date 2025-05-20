@@ -1,9 +1,11 @@
 ---
 import Logo from "@/components/Logo.astro"
 import { DarkModeToggle} from "@/components/DarkModeToogle"
+// import Navbar from "@/components/Navbar.astro"
+import {Navbar} from "@/components/Navbar"
 ---
-<header class="flex items-center justify-between w-full max-w-6xl mx-auto p-4">
+<header class="flex items-center justify-between w-full pt-4">
   <DarkModeToggle client:load />
   <Logo/>
-  <!-- <NavBar /> -->
+  <Navbar client:load />
 </header>
