@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* darkmode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #fef1f9;
+  --color-primary-100: #fee5f4;
+  --color-primary-200: #ffcbea;
+  --color-primary-300: #ffa2d9;
+  --color-primary-400: #fe68bc;
+  --color-primary-500: #f93ba1;
+  --color-primary-600: #e9197e;
+  --color-primary-700: #bd0a5c;
+  --color-primary-800: #a80c52;
+  --color-primary-900: #8c0f46;
+  --color-primary-950: #560127;
+  --font-corinthia: "Corinthia", cursive;
+}
