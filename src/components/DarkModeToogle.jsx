@@ -58,7 +58,7 @@ export const DarkModeToggle = () => {
   return (
     <div className="flex-1 flex items-center justify-start">
       <button
-        className="cursor-pointer text-neutral-800 dark:text-neutral-400"
+        className="cursor-pointer text-neutral-800 dark:text-neutral-300"
         onClick={handleChangeTheme}
       >
         {theme === "light" ? (
