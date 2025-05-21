@@ -1,0 +1,30 @@
+---
+interface Props {
+  href: string;
+  text: string;
+}
+const { href, text } = Astro.props as Props;
+---
+<li class="min-h-full">
+  <a 
+    class="p-2 px-3 bg-transparent h-full transition-all duration-300 ff relative grid place-content-center font-playfair font-semibold text-neutral-900 hover:text-neutral-950" href={href}
+  >{text}</a>
+</li>
+
+<style>
+  .ff::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% -50%, transparent 1%, var(--color-primary-300) 60%, var(--color-primary-500) );
+    z-index: -1;
+    pointer-events: none;
+    border-radius:0 0 0.25rem 0.25rem;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+
+  .ff:hover::before {
+    opacity: 1;
+  }
+</style>

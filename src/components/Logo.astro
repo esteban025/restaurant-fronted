@@ -1,12 +1,16 @@
 ---
 import LogoRestaurant from "@/assets/LogoRestaurant.astro";
 import DecorativeLines from "@/assets/DecorativeLines.astro";
+import { DarkModeToggle } from "@/components/DarkModeToogle";
 ---
 
 <div class="flex-1 flex justify-center items-center">
   <DecorativeLines>
-    <a href="/" class="">
+    <a href="/" class="relative">
       <LogoRestaurant class="w-30 fill-neutral-950 dark:fill-neutral-50 transition-colors duration-300" />
+      <div class="absolute grid place-content-center top-[105%] left-1/2 -translate-x-1/2">
+        <DarkModeToggle client:load />
+      </div>
     </a>
   </DecorativeLines>
 </div>
