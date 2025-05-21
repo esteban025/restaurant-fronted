@@ -11,6 +11,12 @@ importers:
       '@astrojs/react':
         specifier: ^4.2.7
         version: 4.2.7(@types/node@22.15.19)(@types/react-dom@19.1.5(@types/react@19.1.4))(@types/react@19.1.4)(jiti@2.4.2)(lightningcss@1.30.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@fontsource-variable/inter-tight':
+        specifier: ^5.2.5
+        version: 5.2.5
+      '@fontsource-variable/playfair-display':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@fontsource/corinthia':
         specifier: ^5.2.5
         version: 5.2.5
@@ -303,6 +309,12 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/inter-tight@5.2.5':
+    resolution: {integrity: sha512-f7WqR3BQ7YmWT+3i1bR1mqQ1FoIDCfmwKRTENEARFRtkhhR4JPxzF+rB3T75AjZ+dTjIx/nO47LOQDLFWAwJWA==}
+
+  '@fontsource-variable/playfair-display@5.2.5':
+    resolution: {integrity: sha512-nzSCC5pbWHjkJBqjPe81cPIC7fqJ6U5DwJ6tec7vF1bQ2DJnaKRBZluRQJuseFpACZLTN8LeN/1gBQEA7PnKOw==}
 
   '@fontsource/corinthia@5.2.5':
     resolution: {integrity: sha512-eQNPwW2XUx8t3kcLNLNu6pHNu3fyCsgnt8YCeJdhndvZh+oaezKg4LQm5/Fx5ox8PicZ+cHeILA1coJ0RaZskQ==}
@@ -2140,6 +2152,10 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.4':
     optional: true
+
+  '@fontsource-variable/inter-tight@5.2.5': {}
+
+  '@fontsource-variable/playfair-display@5.2.5': {}
 
   '@fontsource/corinthia@5.2.5': {}
 
