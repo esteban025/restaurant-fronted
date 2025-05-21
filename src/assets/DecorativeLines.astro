@@ -1,14 +1,23 @@
-<div class="ss relative">
+---
+interface Props {
+  isTitle?: boolean
+}
+const { isTitle } = Astro.props as Props
+const classBottom = isTitle ? 'before:bottom-1/2 before:-translate-y-1/2 after:bottom-1/2 after:-translate-y-1/2': 'before:bottom-0 after:bottom-0'
+---
+<div class:list={['ss relative w-max', classBottom]}>
   <slot/>
 </div>
 
 <style>
   .ss::before, .ss::after {
     content: '';
-    width: 125%;
+    min-width: 120px;
+    width: 100%;
+    max-width: 200px;
     height: 2px;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     border-radius: 50%;
   }
   

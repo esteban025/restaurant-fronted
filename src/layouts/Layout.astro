@@ -1,6 +1,10 @@
 ---
 import "./src/styles/global.css";
 import '@fontsource/corinthia/700.css';
+// Supports weights 400-900
+import '@fontsource-variable/playfair-display';
+// Supports weights 100-900
+import '@fontsource-variable/inter-tight';
 
 import BackgroundPage from "@/components/BackgroundPage.astro"
 import HeaderPage from "@/sections/HeaderPage.astro"
@@ -13,14 +17,13 @@ import FooterPage from "@/sections/FooterPage.astro"
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>Punto del Sabor | PaulDev</title>
 	</head>
-	<body class="text-neutral-950 dark:text-neutral-50 transition-colors duration-300 ease-in-out">
+	<body class="text-neutral-950 dark:text-neutral-50 font-inter tracking-wide text-lg transition-colors duration-300 ease-in-out dark:font-light">
 		<BackgroundPage />
 		<div class="grid grid-rows-[auto_1fr_auto] min-h-screen w-full max-w-6xl mx-auto px-4 overflow-x-hidden relative">
 			<HeaderPage />
-			<main>
+			<main class="flex flex-col items-center gap-4 w-full">
 				<slot />
 			</main>
 			<FooterPage />

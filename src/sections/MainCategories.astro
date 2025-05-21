@@ -1,0 +1,21 @@
+---
+import DecorativeLines from "@/assets/DecorativeLines.astro"
+import { GetCategories } from "@/components/GetCategories"
+---
+<section class="flex flex-col items-center gap-12 w-full mt-15">
+  <header class="flex flex-col items-center gap-6 w-full">
+    <DecorativeLines isTitle>
+      <h2 class="font-bold font-corinthia text-center sss px-5 leading-7 ">
+        Categorías
+      </h2>
+    </DecorativeLines>
+      <p class="text-pretty text-center text-neutral-800 dark:text-neutral-400">Explora nuestra variedad de categorías y encuentra lo que más te gusta.</p>
+  </header>
+  <GetCategories client:load />
+</section>
+
+<style>
+  .sss {
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+  }
+</style>

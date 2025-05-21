@@ -1,0 +1,21 @@
+---
+import DecorativeLines from "@/assets/DecorativeLines.astro"
+import { GetServices } from "@/components/GetServices"
+---
+<section class="flex flex-col items-center gap-12 w-full mt-15">
+  <header class="flex flex-col items-center gap-6 w-full">
+    <DecorativeLines isTitle>
+      <h2 class="font-bold font-corinthia text-center sss px-5 leading-7 ">
+        Servicios
+      </h2>
+    </DecorativeLines>
+      <p class="text-pretty text-center text-neutral-800 dark:text-neutral-400">Nuestro objetivo es combinar calidad, comodidad y atención personalizada en cada uno de nuestros servicios.</p>
+  </header>
+  <GetServices client:load />
+</section>
+
+<style>
+  .sss {
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+  }
+</style>
