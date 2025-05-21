@@ -12,9 +12,9 @@ const Menu = ({ className }) => (
 export const ToggleMenu = ({ isOpen, setIsOpen }) => {
   return (
     <button
-      className={`cursor-pointer relative z-10 transition-transform duration-300 ease-in-out ${
+      className={`cursor-pointer relative z-20 transition-transform duration-300 ease-in-out ${
         isOpen ? "-translate-x-[250px]" : "-translate-x-0"
-      }`}
+      } lg:hidden`}
       onClick={() => setIsOpen(!isOpen)}
     >
       <Menu
